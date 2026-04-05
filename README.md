@@ -1,5 +1,6 @@
-# E-Learning-Platform-Sales-and-Purchase-Analysis
+E-Learning Platform Sales and Purchase Analysis
 A comprehensive MySQL-based analysis of learner purchasing behavior, course performance, category-wise revenue, and sales trends to support data-driven business decisions.
+
 📖 Table of Contents
 Project Overview
 
@@ -35,12 +36,11 @@ Missing course prices compromise accurate revenue analysis
 This project uses MySQL to design a relational database, perform joins and analytical queries, and generate insights about learner spending, course popularity, category performance, and revenue growth.
 
 🗂️ Data Source
-Source: Sample data created for analysis purposes
-
-Size: 30 learners, 11 courses, 30 purchase records
-
-Time Period: 2023–2026
-
+Attribute	Description
+Source	Sample data created for analysis purposes
+Size	30 learners, 11 courses, 30 purchase records
+Time Period	2023–2026
+Categories Covered	Technology, Business, Design, Language
 Key Tables:
 
 learners (learner_id, full_name, country)
@@ -49,17 +49,12 @@ courses (course_id, course_name, category, unit_price)
 
 purchases (purchase_id, learner_id, course_id, quantity, purchase_date)
 
-Categories Covered: Technology, Business, Design, Language
-
 🛠️ Tools & Technologies
-Database: MySQL (CREATE, INSERT, JOIN, UPDATE, Window Functions)
-
-Visualization: Power BI (Dashboard screenshots included)
-
-Data Cleaning: SQL UPDATE statements, IFNULL(), subqueries
-
-Documentation: Markdown / GitHub README
-
+Category	Tools Used
+Database	MySQL (CREATE, INSERT, JOIN, UPDATE, Window Functions)
+Visualization	Power BI (Dashboard screenshots included)
+Data Cleaning	SQL UPDATE statements, IFNULL(), subqueries
+Documentation	Markdown / GitHub README
 Key SQL Features Used:
 
 INNER JOIN, LEFT JOIN, RIGHT JOIN
@@ -106,33 +101,31 @@ Tip: Insert your Power BI dashboard screenshot here.
 
 💡 Key Insights
 Category Performance
-Technology category had the highest purchase quantity with 25 enrollments
-
-Business category followed closely with 23 enrollments
-
-Language and Design categories had lower demand with 16 and 14 purchases respectively
-
+Category	Purchase Quantity
+Technology	25 enrollments
+Business	23 enrollments
+Language	16 enrollments
+Design	14 enrollments
 Geographic Insights
-India recorded the highest purchase quantity with 16 enrollments
-
-Canada followed with 11 enrollments
-
+Country	Purchase Quantity
+India	16 enrollments
+Canada	11 enrollments
 Learner Behavior
-Sakthi was the top learner with 9 total purchases
-
-Saranya made 6 purchases
-
-A small group of repeat learners contributes a significant share of purchases
+Learner	Total Purchases
+Sakthi	9 purchases
+Saranya	6 purchases
+A small group of repeat learners contributes a significant share of purchases.
 
 Course Performance
-Digital Marketing Pro had the highest enrollment count with 5 unique learners
-
-Data Science and Adobe Photoshop CC also performed strongly in purchase quantity
-
+Course	Unique Learners
+Digital Marketing Pro	5 learners
+Data Science	Strong purchase quantity
+Adobe Photoshop CC	Strong purchase quantity
 Sales Trends
-Total cumulative sales reached approximately ₹1.03 lakh by 2026
-
-Sales dropped in 2025 compared to 2024, possibly due to fewer course launches or lower marketing activity
+Metric	Value
+Total Cumulative Sales (by 2026)	₹1.03 lakh
+Sales Drop (2025 vs 2024)	Significant decrease
+Possible causes: fewer course launches, lower marketing activity, or seasonal decline.
 
 Diagnostic Insights
 Technology and Business courses performed better because learners prefer career-oriented and high-income skill development programs
@@ -158,61 +151,37 @@ MySQL Workbench or any SQL client
 Power BI Desktop (for viewing dashboard)
 
 Setup Instructions
-Clone this repository
+1. Clone this repository
 
 bash
 git clone https://github.com/yourusername/e-learning-platform-analysis.git
 cd e-learning-platform-analysis
-Run the SQL script
+2. Run the SQL script
 
 Open Analyzing E-Learning Platform Purchases using MySQL.sql in MySQL Workbench
 
 Execute the entire script to create database, tables, insert data, and run analytical queries
 
-Verify the setup
+3. Verify the setup
 
 sql
 USE e_learning_platform_db;
 SELECT * FROM learners;
 SELECT * FROM courses;
 SELECT * FROM purchases;
-Run analytical queries
+4. Run analytical queries
 
 The SQL file contains all 7 analytical queries with comments
 
 Each query answers a specific business question
 
-View the Power BI dashboard
+5. View the Power BI dashboard
 
-Open the .pbix file (if available)
-
-Refresh data connection if needed
-
-Key Queries Included
-Query	Description
-Q1	Learner total spending by country
-Q2	Top 3 most purchased courses
-Q3	Category revenue and unique learners
-Q4	Learners who purchased from multiple categories
-Q5	Courses with zero purchases
-Q6	Spender tier classification (High/Medium/Low)
-Q7	Monthly sales trend with running total
 Dependencies
 No additional Python packages required
 
 Pure SQL implementation
 
-📊 Dashboard Preview
-Insert your Power BI dashboard screenshots here
+Open the .pbix file (if available)
 
-Key Dashboard Sections:
-
-Overall purchase quantity by category
-
-Top learners by purchase volume
-
-Top courses by enrollment count
-
-Yearly sales trend with running total
-
-Country-wise purchase distribution
+Refresh data connection if needed
