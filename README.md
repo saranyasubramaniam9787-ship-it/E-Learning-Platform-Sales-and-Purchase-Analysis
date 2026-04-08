@@ -195,7 +195,7 @@ Possible causes:
 #### 1. Clone this repository
 
 ```bash
-git clone https://github.com/yourusername/e-learning-platform-analysis.git
+git clone https://github.com/saranyasubramaniam9787-ship-it/e-learning-platform-analysis.git
 cd e-learning-platform-analysis
 ```
 
