@@ -109,7 +109,7 @@ The following business questions were explored using SQL queries:
 | How are learners categorized as High/Medium/Low Spenders?       | CTE + CASE statement                    |
 | What is the monthly sales trend with running total?             | Window Functions (`SUM OVER`)           |
 
-> Tip: Insert your Power BI dashboard screenshot here.
+
 
 ---
 
